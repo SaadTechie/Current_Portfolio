@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme{
+  /* Modern Dark Theme Colors */
+  --color-bg-dark: #0f172a;      /* Slate 900 */
+  --color-bg-card: #1e293b;      /* Slate 800 */
+  --color-text-main: #f8fafc;    /* Slate 50 */
+  --color-text-muted: #94a3b8;   /* Slate 400 */
+  --color-accent: #38bdf8;       /* Sky 400 */
+  --color-accent-hover: #0284c7; /* Sky 600 */
+}
+
+/* Base styles for the SPA smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-main);
+}
+
+body {
+  @apply antialiased selection:bg-accent selection:text-bg-dark;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
